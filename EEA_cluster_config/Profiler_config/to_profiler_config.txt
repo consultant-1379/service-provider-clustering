@@ -1,0 +1,39 @@
+# MXE compatible config
+ 
+imsi;service_provider;service_provider == Google;count;1; sp_Google
+imsi;service_provider;service_provider == Google Play;count;1; sp_GooglePlay
+imsi;service_provider;service_provider == Samsung Apps;count;1; sp_SamsungApps
+imsi;service_provider;service_provider == Facebook;count;1; sp_Facebook
+imsi;service_provider;service_provider == Snapchat;count;1; sp_Snapchat
+imsi;service_provider;service_provider == Instagram;count;1; sp_Instagram
+imsi;service_provider;service_provider == Twitter;count;1; sp_Twitter
+imsi;service_provider;service_provider == Pinterest;count;1; sp_Pinterest
+imsi;service_provider;service_provider == Tumblr;count;1; sp_Tumblr
+imsi;service_provider;service_provider == Flickr;count;1; sp_Flickr
+imsi;service_provider;service_provider == Google+;count;1; sp_Googleplus
+imsi;service_provider;service_provider == Vine;count;1; sp_Vine
+imsi;service_provider;service_provider == We Heart It;count;1; sp_WeHeartIt
+imsi;service_provider;service_provider == Picasa;count;1; sp_Picasa
+imsi;service_provider;service_provider == LinkedIn;count;1; sp_LinkedIn
+imsi;service_provider;service_provider == Yahoo;count;1; sp_Yahoo
+imsi;service_provider;service_provider == Outlook;count;1; sp_Outlook
+imsi;service_provider;service_provider == Gmail;count;1; sp_Gmail
+imsi;service_provider;service_provider == Hotmail;count;1; sp_Hotmail
+imsi;service_provider;service_provider == Microsoft Live;count;1; sp_MicrosoftLive
+imsi;service_provider;service_provider == Microsoft;count;1; sp_Microsoft
+imsi;service_provider;service_provider == YouTube;count;1; sp_YouTube
+imsi;service_provider;service_provider == Netflix;count;1; sp_Netflix
+imsi;service_provider;service_provider == Vimeo;count;1; sp_Vimeo
+imsi;service_provider;service_provider == Dailymotion;count;1; sp_Dailymotion
+imsi;service_provider;service_provider == Ustream;count;1; sp_Ustream
+imsi;service_provider;service_provider == Hulu;count;1; sp_Hulu
+imsi;service_provider;service_provider == Skype;count;1; sp_Skype
+imsi;service_provider;service_provider == Viber;count;1; sp_Viber
+imsi;service_provider;service_provider == WhatsApp;count;1; sp_WhatsApp
+imsi;service_provider;service_provider == Nimbuzz;count;1; sp_Nimbuzz
+imsi;service_provider;service_provider == Amazon;count;1; sp_Amazon
+imsi;service_provider;service_provider == eBay;count;1; sp_eBay
+imsi;service_provider;service_provider == Office Online;count;1; sp_OfficeOnline
+imsi;service_provider;service_provider == Adobe;count;1; sp_Adobe
+imsi;service_provider;service_provider == Foursquare;count;1; sp_Foursquare
+imsi;service_provider;service_provider == Wikipedia;count;1; sp_Wikipedia

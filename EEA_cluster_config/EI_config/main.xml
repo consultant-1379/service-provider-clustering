@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataStoreMainInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://models.eea.ericsson.com/ei/DataStoreMain"
+                   xsi:schemaLocation="http://models.eea.ericsson.com/ei/DataStoreMain ../../datastore-main.xsd"
+                   id="insights_user_behaviour_classification">
+    <modelInformation>
+        <name>User Behaviour Classification</name>
+        <version>1.0.0</version>
+        <created>2019-07-26T12:30:00+01:00</created>
+    </modelInformation>
+    <displayName>User Behaviour Classification DataStore</displayName>
+    <description>User Behaviour Classification DataStore</description>
+    <connectionPoolName>java:/jdbc/ark_aggregation_impala</connectionPoolName>
+    <type>ESR</type>
+    <databaseType>IMPALA</databaseType>
+    <primaryTimeDimensionName>ts</primaryTimeDimensionName>
+    <timezone>Europe/Budapest</timezone>
+    <availableValuesLimit>1000000</availableValuesLimit>
+    <additionalOfferedResolutions>
+        <!-- some additional resolutions are added here in case
+        only 5-min pre-aggregates are available in the DB -->
+        <resolution>
+            <value>1</value>
+            <unit>day</unit>
+        </resolution>
+    </additionalOfferedResolutions>
+    <customDataSource>
+        <customConnectionPool>
+            <databaseType>IMPALA</databaseType>
+            <dataSourceType>STATISTICS</dataSourceType>
+            <connectionPoolName>java:/jdbc/aggregator_statistics</connectionPoolName>
+            <schemaName>aggregator</schemaName>
+            <tableName>statistics</tableName>
+        </customConnectionPool>
+    </customDataSource>
+    <cacheTimeout>600</cacheTimeout>
+    <!-- Optional attributes, check semantics in XSD before you modify these.
+        The below values are the defaults. Don't modify if you are okay with the defaults.
+   <aggregatorType>ARK</aggregatorType>
+   <enabled>true</enabled>
+   <encrypted>true</encrypted>
+   <aggregatorSchemaName>aggregator</aggregatorSchemaName>
+   <displayOrder>10</displayOrder>
+   <lightQueryCachePeriod>3600</lightQueryCachePeriod>
+   <lightQueryTimeLimit>120</lightQueryTimeLimit>
+    -->
+</dataStoreMainInfo>

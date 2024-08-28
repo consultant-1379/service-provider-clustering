@@ -1,0 +1,47 @@
+{
+    "aggregatorConfiguration": {
+        "dimensionGroups": [
+            {
+                "id": "user_behaviour_dg",
+                "dimensions": [
+                    "imsi",
+                    "class_dim",
+                    "class_label"
+                ]
+            }
+        ],
+        "kpiGroups": [
+            {
+                "kpis": [
+                    {
+                        "aggregationMethod": "sum",
+                        "name": "class_kpi"
+                    }
+                ],
+                "id": "user_behaviour_kg"
+            }
+        ],
+        "schemas": [
+            {
+                "tables": [
+                    {
+                        "source": {
+                            "flattedSchema": "esr_kpi"
+                        },
+                        "resolution": {
+                            "value": "one",
+                            "unit": "day"
+                        }
+                    }
+                ],
+                "kpiGroups": [
+                    "user_behaviour_kg"
+                ],
+                "dimensionGroups": [
+                    "user_behaviour_dg"
+                ],
+                "name": "user_behaviour"
+            }
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datastoreMetadata xmlns="http://models.eea.ericsson.com/ei/DataStoreMetaData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://models.eea.ericsson.com/ei/DataStoreMetaData ../../datastore_metadata.xsd">
+   <modelInformation>
+      <name>DataStore Metadata for MXE integration test</name>
+      <version>1.0.0</version>
+      <created>2019-07-26T13:55:00</created>
+   </modelInformation>
+   <kpis>
+      <kpi id="class_kpi">
+         <type>distribution</type>
+         <mainDataType>float</mainDataType>
+         <displayName>Behaviour Class</displayName>
+         <description>Number representing the behaviour class the given IMSI belongs to.</description>
+      </kpi>
+   </kpis>
+   <kpiGroups>
+      <kpiGroup id="user_behaviour_kg">
+         <kpis>
+            <kpiId>class_kpi</kpiId>
+         </kpis>
+         <monitoring>false</monitoring>
+         <displayName>User Behaviour Class</displayName>
+         <description>User behaviour class</description>
+      </kpiGroup>
+   </kpiGroups>
+   <dimensions>
+      <dimension id="imsi">
+         <displayName>IMSI</displayName>
+         <description>IMSI - user identify</description>
+         <dataType>int64</dataType>
+         <type>normal</type>
+      </dimension>
+      <dimension id="class_dim">
+         <displayName>User Behaviour Class</displayName>
+         <description>User behaviour class</description>
+         <dataType>int64</dataType>
+         <type>normal</type>
+      </dimension>
+      <dimension id="class_label">
+         <displayName>User Behaviour Class</displayName>
+         <description>User behaviour class label</description>
+         <dataType>string</dataType>
+         <type>normal</type>
+      </dimension>
+   </dimensions>
+   <dimensionGroups>
+      <dimensionGroup id="user_behaviour_dg">
+         <monitoring>false</monitoring>
+         <displayName>User Behaviour</displayName>
+         <description>User Behaviour</description>
+         <dimensions>
+            <dimensionId>imsi</dimensionId>
+            <dimensionId>class_dim</dimensionId>
+         </dimensions>
+      </dimensionGroup>
+   </dimensionGroups>
+</datastoreMetadata>
